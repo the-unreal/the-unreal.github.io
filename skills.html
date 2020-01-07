@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Skills</title>
+
+        <!--  Bootstrap css file  -->
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+        <!--  custom css file  -->
+        <link rel="stylesheet" href="./css/style.css">
+
+        <!--  Responsive css file  -->
+        <link rel="stylesheet" href="./css/responsive.css">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+                let $btns = $('.site-main .button-group .button');
+            
+                $btns.click(function (e) {
+            
+                    $('.site-main .button-group .button').removeClass('active');
+                    e.target.classList.add('active');
+            
+                    let selector = $(e.target).attr('data-filter');
+                    $('.site-main .grid').isotope({
+                        filter: selector
+                    });
+            
+                    return false;
+                })
+            })
+        </script>
+
+    </head>
+    <body>
+        
+        <main class="site-main skills-page">
+            <h1 class="text-center skills-heading">Skills</h1>
+            <div class="button-group">
+                <button class="button active">All</button>
+                <button class="button" data-filter=".prog-lang">Programming Languages</button>
+                <button class="button" data-filter=".tech">Technologies and Technical Skills</button>
+                <button class="button" data-filter=".cloud">Cloud Services</button>
+                <button class="button" data-filter=".tools">Tools</button>
+                <button class="button" data-filter=".frame-api">Frameworks and APIs</button>
+                <div style="clear: both;"></div>
+            </div>
+            <section class="skills-area">
+                <div class="container skills-list">
+                    <div class="row grid">
+
+                        <!-- ========== Programming Languages ============ -->
+                        <div class="col-lg-3 col-md-6 col-sm-12 prog-lang filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/java-1.png" alt="Java">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Java</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 prog-lang filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/python-1.png" alt="Python">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Python</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 prog-lang filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/c-1.png" alt="C++">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">C++</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 prog-lang filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/html-css.png" alt="HTML & CSS">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">HTML & CSS</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 prog-lang filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/javascript.png" alt="Javascript">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Javascript</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ========== Technologies and Technical Skills ============ -->
+                        <div class="col-lg-3 col-md-6 col-sm-12 tech filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/dsa-1.png" alt="Data Structures and Algorithms">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Data Structures and Algorithms</h5>
+                                     
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 tech filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/ml-1.png" alt="Machine Learning">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Machine Learning</h5>
+                                     
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 tech filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/dl-1.png" alt="Deep Learning">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Deep Learning</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 tech filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/cv-1.png" alt="Computer Vision">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Computer Vision</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 tech filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/cv-1.png" alt="Image Processing">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Image Processing</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 tech filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/nlp-1.png" alt="Natural Language Processing">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Natural Language Processing</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 tech filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/time-1.png" alt="Time Series Analysis">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Time Series Analysis</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 tech filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/data-1.png" alt="Data Analysis">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Data Analysis</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 tech filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/web-1.png" alt="Web Scraping">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Web Scraping</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 tech filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/kubernetes-1.png" alt="Kubernetes">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Kubernetes</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 tech filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/docker-1.png" alt="Docker">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Docker</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 tech filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/design-1.png" alt="Design Patterns">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Design Patterns</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 tech filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/jsp-1.png" alt="JavaServer Pages">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">JavaServer Pages</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <!-- ========== Cloud Services ============ -->
+                        <div class="col-lg-3 col-md-6 col-sm-12 cloud filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/aws-1.png" alt="Amazon Web Services">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Amazon Web Services</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 cloud filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/azure-1.png" alt="Microsoft Azure">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Microsoft Azure</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 cloud filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/gcp-1.png" alt="Google Cloud Platform">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Google Cloud Platform</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 cloud filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/ibm-1.png" alt="IBM Cloud">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">IBM Cloud</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <!-- ========== Tools ============ -->
+                        <div class="col-lg-3 col-md-6 col-sm-12 tools filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/swing-1.png" alt="Java Swing">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Java Swing</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 tools filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/swing-1.png" alt="Java Abstract Window Toolkit">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Java Abstract Window Toolkit</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 tools filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/git-1.png" alt="Git">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Git</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 tools filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/scikit-1.png" alt="scikit-learn">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">scikit-learn</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 tools filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/opencv-1.png" alt="OpenCV">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">OpenCV</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 tools filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/mongo-1.png" alt="MongoDB">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">MongoDB</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 tools filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/mysql-1.png" alt="MySQL">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">MySQL</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 tools filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/swing-1.png" alt="Hibernate">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Hibernate</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 tools filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/anaconda-1.png" alt="Anaconda Distribution">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Anaconda Distribution</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 tools filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/spark-1.png" alt="Apache Spark">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Apache Spark</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 tools filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/hadoop-1.png" alt="Hadoop">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Hadoop</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- ========== Frameworks and API ============ -->
+                        <div class="col-lg-3 col-md-6 col-sm-12 frame-api filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/swing-1.png" alt="Java Database Connectivity">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Java Database Connectivity</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 frame-api filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/tensor-1.png" alt="TensorFlow">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">TensorFlow</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 frame-api filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/pytorch-1.png" alt="PyTorch">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">PyTorch</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 frame-api filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/keras-1.png" alt="Keras">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Keras</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 frame-api filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/kubeless-1.png" alt="Kubeless">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Kubeless</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 frame-api filter">
+                            <div class="skills">
+                                <div class="skills-image text-center py-4">
+                                    <img src="./img/skills/openwhisk.png" alt="OpenWhisk">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">OpenWhisk</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- <script src="./js/main.js"></script> -->
+        <script src="./vendor/isotope/isotope.min.js"></script>
+
+    </body>
+</html>
